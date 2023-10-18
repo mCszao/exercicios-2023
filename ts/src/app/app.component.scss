@@ -259,6 +259,7 @@ svg#clouds {
 .side-menu{
   display: flex;
   flex-direction: column;
+  border-right : solid 3px #E7E7E7;
 
   .name-event-container{
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);

@@ -61,7 +61,7 @@ p {
   opacity: 0.8;
 }
 
-.main-content {
+.content {
   display: grid;
   grid-template-columns: 1fr 6fr;
 }
@@ -303,6 +303,14 @@ svg#clouds {
       border-left: solid 3px #ED7839;
     }
   }
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+
+
 }
 
 

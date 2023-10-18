@@ -310,7 +310,13 @@ svg#clouds {
   flex-direction: column;
   margin-left: 2rem;
 
-
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #725C5C;
+    font-family: 'Roboto', sans-serif;
+  }
 }
 
 

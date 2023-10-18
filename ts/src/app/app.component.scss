@@ -61,7 +61,8 @@ p {
 }
 
 .main-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
 }
 
 svg.material-icons {
@@ -274,8 +275,13 @@ svg#clouds {
       font-weight: 700;
       line-height: normal;
     }
+
   }
+
+
 }
+
+
 
 h2{
   color: #ED7839;

@@ -254,6 +254,15 @@ svg#clouds {
   }
 }
 
+.side-menu{
+  display: flex;
+  flex-direction: column;
+
+  .name-event-container{
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+  }
+}
+
 h2{
   color: #ED7839;
   font-family: 'Roboto', sans-serif;

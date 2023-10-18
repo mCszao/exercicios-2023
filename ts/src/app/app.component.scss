@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
@@ -59,13 +60,8 @@ p {
   opacity: 0.8;
 }
 
-.content {
+.main-content {
   display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
-  flex-direction: column;
-  align-items: center;
 }
 
 svg.material-icons {
@@ -256,4 +252,13 @@ svg#clouds {
   h2, a {
     font-size: 12px;
   }
+}
+
+h2{
+  color: #ED7839;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1px;
 }

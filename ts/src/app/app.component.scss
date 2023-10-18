@@ -260,6 +260,20 @@ svg#clouds {
 
   .name-event-container{
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color: #FFF;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
   }
 }
 

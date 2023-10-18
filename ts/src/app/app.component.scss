@@ -278,7 +278,29 @@ svg#clouds {
 
   }
 
+  .side-menu-navigator{
+    display: flex;
+    flex-direction: column;
 
+    a{
+      color: #725C5C;
+      height: 1rem auto;
+      padding: .7rem;
+      border-bottom: solid 1px #E7E7E7;
+      transition: 0.2s ease-in all;
+      color: #725C5C;
+      font-family: Quicksand;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    a:hover{
+      background: #FDF1EB;
+      border-left: solid 3px #ED7839;
+    }
+  }
 }
 
 

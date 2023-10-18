@@ -15,35 +15,41 @@
     </nav>
   </aside>
   <main>
-  <h2>Informações importantes</h2>
+    <header class="header">
+      <div class="header-text-container">
+        <span>Anais do Simpósio Latino Americano de Ciências de Alimentos</span>
+        <h1>Anais do 13° Simpósio Latino Americano de Ciências de Alimentos</h1>
+        <span>ISSN: 1234-5678</span>
+      </div>
+    </header>
   <p>Os seguintes elementos devem existir no seu aplicativo renderizado (use o inspect):</p>
-  <div id="required-elements">
-    <h3>O título do trabalho deve ser um h2: </h3>
-    <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP'</h2>
+    <div id="required-elements">
+      <h3>O título do trabalho deve ser um h2: </h3>
+      <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP'</h2>
 
-    <h3>O elemento de expandir resumo precisa ter a classe .btn-show-more</h3>
-    <a href="#" class="btn-show-more">ver mais</a>
+      <h3>O elemento de expandir resumo precisa ter a classe .btn-show-more</h3>
+      <a href="#" class="btn-show-more">ver mais</a>
 
-    <h3>O elemento de criar tópico precisa ter a classe .btn-create-topic</h3>
-    <a href="#" class="btn-create-topic">criar tópico</a>
+      <h3>O elemento de criar tópico precisa ter a classe .btn-create-topic</h3>
+      <a href="#" class="btn-create-topic">criar tópico</a>
 
-    <h3>O card que contém um tópico respondido precisa ter a classe .answered-topic, o assunto do tópico deve ter a classe .ops-topic-subject</h3>
-    <div class="answered-topic">
-      <h4 class="ops-topic-subject">Título do tópico</h4>
+      <h3>O card que contém um tópico respondido precisa ter a classe .answered-topic, o assunto do tópico deve ter a classe .ops-topic-subject</h3>
+      <div class="answered-topic">
+        <h4 class="ops-topic-subject">Título do tópico</h4>
+      </div>
+      <div div class="comments-container">
+        Os comentários de um tópico devem estar encapsulados num elemento com a classe .comments-container
+      </div>
+
+      <form>
+        Assunto:
+        <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+        Conteúdo:
+        <!-- <input> -->
+        <button>Enviar</button>
+      </form>
+
+      <h3>Após submeter o formulário, a seguinte mensagem deve ser exibida: Aguardando feedback dos autores</h3>
     </div>
-    <div class="comments-container">
-      Os comentários de um tópico devem estar encapsulados num elemento com a classe .comments-container
-    </div>
-
-    <form>
-      Assunto:
-      <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
-      Conteúdo:
-      <!-- <input> -->
-      <button>Enviar</button>
-    </form>
-
-    <h3>Após submeter o formulário, a seguinte mensagem deve ser exibida: Aguardando feedback dos autores</h3>
-  </div>
-</main>
+  </main>
 </div>

@@ -43,25 +43,25 @@
         <h3>Resumo</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, obcaecati. Similique quam doloremque deleniti necessitatibus! Assumenda blanditiis fuga dicta cumque vel est, deserunt, molestias optio nemo sint ullam enim eos! <a href="#" class="btn-show-more">ver mais</a></p>
       </section>
-      <h3>O elemento de criar tópico precisa ter a classe .btn-create-topic</h3>
-      <a href="#" class="btn-create-topic">criar tópico</a>
+      <section class="topics-container">
+        <h3>Discussões</h3>
+        <a href="#" class="btn-create-topic">criar tópico</a>
+        <h3>O card que contém um tópico respondido precisa ter a classe .answered-topic, o assunto do tópico deve ter a classe .ops-topic-subject</h3>
+        <div class="answered-topic">
+          <h4 class="ops-topic-subject">Título do tópico</h4>
+        </div>
+        <div div class="comments-container">
+          Os comentários de um tópico devem estar encapsulados num elemento com a classe .comments-container
+        </div>
 
-      <h3>O card que contém um tópico respondido precisa ter a classe .answered-topic, o assunto do tópico deve ter a classe .ops-topic-subject</h3>
-      <div class="answered-topic">
-        <h4 class="ops-topic-subject">Título do tópico</h4>
-      </div>
-      <div div class="comments-container">
-        Os comentários de um tópico devem estar encapsulados num elemento com a classe .comments-container
-      </div>
-
-      <form>
-        Assunto:
-        <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
-        Conteúdo:
-        <!-- <input> -->
-        <button>Enviar</button>
-      </form>
-
+        <form>
+          Assunto:
+          <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+          Conteúdo:
+          <!-- <input> -->
+          <button>Enviar</button>
+        </form>
+      </section>
       <h3>Após submeter o formulário, a seguinte mensagem deve ser exibida: Aguardando feedback dos autores</h3>
     </div>
   </main>

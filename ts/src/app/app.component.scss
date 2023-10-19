@@ -248,7 +248,6 @@ svg#clouds {
   }
 }
 
-
 .side-menu{
   display: flex;
   flex-direction: column;
@@ -326,14 +325,18 @@ svg#clouds {
 }
 
 .content-work-details{
+  display: flex;
 
-  h2{
-    color: #ED7839;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 900;
-    line-height: 25px;
-    letter-spacing: 1px;
+  .title-video-work-container{
+    width: 70%;
+    h2{
+      color: #ED7839;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 25px;
+      letter-spacing: 1px;
+    }
   }
 
   .btn-show-more, .btn-show-more:visited{

@@ -10,12 +10,16 @@
 }
 
 h1,
-h3,
 h4,
 h5,
 h6 {
   margin: 8px 0;
   font-weight: 400;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Roboto', "sans-serif";
 }
 
 h2 {
@@ -367,7 +371,7 @@ svg#clouds {
       p{
         color: #ED7839;
         text-align: right;
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
@@ -393,7 +397,7 @@ svg#clouds {
       border-radius: 3px;
       border: 1px solid #ECECEC;
       color: #5C5C5C;
-      font-family: Quicksand;
+      font-family: 'Quicksand', sans-serif;
       font-size: 12px;
       font-style: normal;
       font-weight: 400;
@@ -403,10 +407,7 @@ svg#clouds {
     .title-detail-container{
       border-bottom: 1px solid #ECECEC;
       padding: 1rem;
-      h3{
-        font-size: 1.5rem;
-        font-weight: 700;
-      }
+
 
     }
     .other-detail-container{

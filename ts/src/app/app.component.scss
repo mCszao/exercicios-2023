@@ -348,6 +348,7 @@ svg#clouds {
     .buttons-container {
       display: flex;
       gap: .7rem;
+      flex-wrap: wrap;
 
       button{
         color: #ffffff;

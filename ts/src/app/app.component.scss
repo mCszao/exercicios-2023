@@ -252,6 +252,12 @@ svg#clouds {
   }
 }
 
+#required-elements{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .side-menu{
   display: flex;
   flex-direction: column;
@@ -331,7 +337,7 @@ svg#clouds {
 .content-work-details{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+
 
   .title-buttons-work-container{
     display: flex;
@@ -404,12 +410,7 @@ svg#clouds {
       line-height: 120%;
       letter-spacing: 0.24px;
 
-    .title-detail-container{
-      border-bottom: 1px solid #ECECEC;
-      padding: 1rem;
 
-
-    }
     .other-detail-container{
       display: flex;
       flex-direction: column;
@@ -449,5 +450,13 @@ svg#clouds {
 .container-with-border{
   border-radius: 3px;
   border: 1px solid #ECECEC;
+
+}
+
+.title-container{
+  border-bottom: 1px solid #ECECEC;
+  padding: 1rem;
+  background: #FDF1EB;
+
 }
 

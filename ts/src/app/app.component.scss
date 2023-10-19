@@ -332,7 +332,7 @@ svg#clouds {
   .title-buttons-work-container{
     display: flex;
     align-items: baseline;
-    gap: 2rem;
+    justify-content: space-between;
 
 
     h2{
@@ -356,6 +356,17 @@ svg#clouds {
         border: 1px solid rgba(0, 0, 0, 0.00);
         background: #ED7839;
         padding: 6px 12px;
+      }
+
+      p{
+        color: #ED7839;
+        text-align: right;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0.7px;
       }
     }
 

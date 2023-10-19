@@ -332,8 +332,8 @@ svg#clouds {
   .title-buttons-work-container{
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
 
+    justify-content: space-between;
 
     h2{
       color: #ED7839;
@@ -349,6 +349,7 @@ svg#clouds {
       display: flex;
       gap: .7rem;
       flex-wrap: wrap;
+      width: 20rem;
 
       button{
         color: #ffffff;

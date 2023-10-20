@@ -256,6 +256,7 @@ svg#clouds {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 80vw;
 }
 
 .side-menu{
@@ -440,10 +441,10 @@ svg#clouds {
   }
 }
 }
+
 .resume-container{
   .resume-text-container{
     padding: 1rem;
-    width: 90%;
     p{
       color: #5C5C5C;
       font-family: Quicksand;

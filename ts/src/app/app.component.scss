@@ -257,6 +257,7 @@ svg#clouds {
   flex-direction: column;
   gap: 2rem;
   width: 80vw;
+  margin-left: 2rem;
 }
 
 .side-menu{
@@ -311,7 +312,7 @@ svg#clouds {
 .main{
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
+
 
   .header{
     display: flex;
@@ -319,19 +320,23 @@ svg#clouds {
     align-items: center;
     color: #725C5C;
     font-family: 'Roboto', sans-serif;
+    background: #FDF1EB;
 
-    span{
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
+    .header-text-container {
+      margin-left: 2rem;
+      span{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      button {
+        border-radius: 3px;
+        border: 1px solid #CCC;
+        width: 7rem;
+        height: 2.5rem;
+      }
     }
-
-    button {
-      border-radius: 3px;
-      border: 1px solid #CCC;
-      width: 7rem;
-      height: 2.5rem;
-  }
   }
 }
 

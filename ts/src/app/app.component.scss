@@ -442,6 +442,8 @@ svg#clouds {
 }
 .resume-container{
   .resume-text-container{
+    padding: 1rem;
+    width: 90%;
     p{
       color: #5C5C5C;
       font-family: Quicksand;
@@ -455,12 +457,16 @@ svg#clouds {
 
       }
 
+
+
     }
   }
 
 }
 
-
+p#hidden {
+  display: none;
+}
 
 .container-with-border{
   border-radius: 3px;

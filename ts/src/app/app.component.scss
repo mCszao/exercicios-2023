@@ -522,24 +522,6 @@ svg#clouds {
       font-weight: 700;
       line-height: normal;
     }
-    p.nameuser{
-      color: #5C5C5C;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-    }
-
-    p.comment {
-      margin-top: 7px;
-      color: #4D4D4D;
-      font-family: 'Roboto', sans-serif;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
     .topic-actions-container {
       margin-top: 1.8rem;
       display: flex;
@@ -562,6 +544,25 @@ svg#clouds {
 
 
   }
+}
+
+p.nameuser{
+  color: #5C5C5C;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p.comment {
+  margin-top: 7px;
+  color: #4D4D4D;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .comments-container{
   margin:0 10px 0 10px;

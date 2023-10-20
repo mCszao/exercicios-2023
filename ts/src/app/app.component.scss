@@ -508,7 +508,12 @@ svg#clouds {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
     margin:0 10px 0 10px;
     padding: 1rem;
+    transition: .1s all ease-in;
 
+    &:hover {
+      cursor: pointer;
+      background-color: #FDF1EB;;
+    }
     .ops-topic-subject{
       color: #ED7839;
       font-family: 'Quicksand', sans-serif;
@@ -578,6 +583,20 @@ svg#clouds {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  span{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+  }
 }
 
 .action-button{
@@ -588,6 +607,11 @@ svg#clouds {
   padding: 6px 12px;
   display: flex;
   gap: .5em;
+
+  &:hover {
+    cursor: pointer;
+    background: #f26012;
+  }
 }
 
 p.hidden {

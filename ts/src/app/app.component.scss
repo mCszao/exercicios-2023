@@ -485,6 +485,8 @@ svg#clouds {
       gap: 3rem;
     }
 
+
+
     p{
       color: #595959;
       text-align: center;
@@ -552,6 +554,16 @@ svg#clouds {
       }
     }
   }
+}
+.btn-create-topic{
+  background:  #FFB354 50%;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: none;
+  width: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .action-button{

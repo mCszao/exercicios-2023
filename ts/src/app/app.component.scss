@@ -566,11 +566,46 @@ p.comment {
 }
 .comments-container{
   margin:0 10px 0 10px;
-  border: 1px 0 0px 1px solid #E7E7E7;
   background: #FFF;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
-  background: #F8F8F8;
-  padding: 1rem;
+  padding: 2rem 1rem ;
+  border: none;
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    div{
+      display: flex;
+      gap: 2rem;
+      margin-right: 1rem;
+    }
+    span{
+      display: none;
+    }
+    img{
+      display: none;
+    }
+  }
+
+  &.has-role{
+    background: #F8F8F8;
+
+    header{
+      span{
+        display: inline;
+        color: #ED7839;
+        text-align: right;
+        font-family: Quicksand;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      img {
+        display: block;
+      }
+    }
+  }
 }
 
 .btn-create-topic{

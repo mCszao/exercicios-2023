@@ -322,6 +322,31 @@ svg#clouds {
     font-family: 'Roboto', sans-serif;
     background: #FDF1EB;
 
+    .header-user-info-container{
+      display: flex;
+      align-items: center;
+
+      span {
+        color: #333;
+        text-align: right;
+        font-family: Quicksand;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      div{
+        display: flex;
+        flex-direction: column;
+      }
+
+      img{
+        border-radius: 50%;
+        height: 6vh;
+      }
+    }
+
     .header-text-container {
       margin-left: 2rem;
       span{
@@ -330,11 +355,25 @@ svg#clouds {
         font-weight: 400;
       }
 
-      button {
-        border-radius: 3px;
-        border: 1px solid #CCC;
-        width: 7rem;
-        height: 2.5rem;
+
+    }
+
+    button {
+      border-radius: 3px;
+      border: 1px solid #CCC;
+      width: 7rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img:nth-child(1) {
+        margin-bottom: 3px;
       }
     }
   }
@@ -586,6 +625,7 @@ p.comment {
     img{
       display: none;
     }
+
   }
 
   &.has-role{

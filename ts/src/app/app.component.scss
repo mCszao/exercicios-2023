@@ -465,6 +465,7 @@ svg#clouds {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-bottom: 1rem;
 
   .new-topic-container{
     display: flex;
@@ -665,5 +666,11 @@ p.hidden {
   padding: 1rem;
   background: #FDF1EB;
 
+}
+
+footer{
+  img{
+    width: 100%;
+  }
 }
 

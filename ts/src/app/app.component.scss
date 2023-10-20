@@ -501,7 +501,7 @@ svg#clouds {
 
 
   .answered-topic{
-
+    position: relative;
     border-radius: 4px;
     border: 1px solid #E7E7E7;
     background: #FFF;
@@ -552,9 +552,21 @@ svg#clouds {
         font-weight: 350;
         line-height: normal;
       }
+
     }
+
+
   }
 }
+.comments-container{
+  margin:0 10px 0 10px;
+  border: 1px 0 0px 1px solid #E7E7E7;
+  background: #FFF;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+  background: #F8F8F8;
+  padding: 1rem;
+}
+
 .btn-create-topic{
   margin: 10px auto;
   position: static;

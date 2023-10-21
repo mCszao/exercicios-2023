@@ -22,15 +22,15 @@
         <span>ISSN: 1234-5678</span>
       </div>
       <button>
-        <img src="../assets/language image.png" alt="">
+        <img src="../assets/language image.png" alt="icone de Globo">
         <span>PT, BR</span>
-        <img src="../assets/dropdown.png" alt=""></button>
+        <img src="../assets/dropdown.png" alt="icone de dropdown"></button>
       <div class="header-user-info-container">
         <div>
           <span>Bem Vindo!</span>
           <span>alguem12@galoascience.com</span>
         </div>
-        <img src="../assets/image.png" alt="">
+        <img src="../assets/image.png" alt="icone de usuário">
       </div>
     </header>
     <div id="required-elements">
@@ -39,11 +39,11 @@
           <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP'</h2>
           <div class="buttons-container">
             <button class="action-button">
-              <img style src="../assets/download.png" alt="">Download</button>
+              <img style src="../assets/download.png" alt="icone de download">Download</button>
             <button class="action-button">
-              <img src="../assets/star.png" alt=""></button>
+              <img src="../assets/star.png" alt="icone de estrela"></button>
             <button class="action-button">
-              <img src="../assets/doi.png" alt=""></button>
+              <img src="../assets/doi.png" alt="icone doi"></button>
             <p>COMO CITAR ESSE TRABALHO?</p>
           </div>
         </div>
@@ -94,9 +94,9 @@
           <div *ngSwitchCase="'create'" class="new-topic-container">
             <h4>Compartilhe suas idéias ou dúvidas com os autores!</h4>
             <div class="icons-topic-container">
-              <img src="../assets/icone1.svg" alt="">
-              <img src="../assets/icone2.svg" alt="">
-              <img src="../assets/icone3.svg" alt="">
+              <img src="../assets/icone1.svg" alt="icone de mão">
+              <img src="../assets/icone2.svg" alt="icone de balões de fala">
+              <img src="../assets/icone3.svg" alt="icone de idea">
             </div>
             <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
           </div>
@@ -118,7 +118,7 @@
           </div>
         </div>
         <button (click)="setFormVisible()" class="btn-create-topic" [ngClass]="verifyForm()">
-          <img src="../assets/icon - criar.svg" alt=""><span>
+          <img src="../assets/icon - criar.svg" alt="icone de mais"><span>
             criar tópico
           </span>
         </button>
@@ -131,10 +131,10 @@
                 <p class="comment">{{ comment.comment }}</p>
                 <div class="topic-actions-container">
                   <a href="#">
-                    <img src="../assets/mais informações.svg" alt="">
+                    <img src="../assets/mais informações.svg" alt="icone de três pontinhos">
                   </a>
                   <button class="action-button">
-                    <img src="../assets/green apples 22.png" alt="">
+                    <img src="../assets/green apples 22.png" alt="icone de coração">
                   </button>
                   <span>{{ comment.likes }} like</span>
                   <span>{{ comment.answers }} resposta</span>
@@ -148,10 +148,10 @@
                 <p class="comment">{{ comment.comment }}</p>
                 <div class="topic-actions-container">
                   <a href="#">
-                    <img src="../assets/mais informações.svg" alt="">
+                    <img src="../assets/mais informações.svg" alt="icon de três pontinhos">
                   </a>
                   <button class="action-button">
-                    <img src="../assets/green apples 22.png" alt="">
+                    <img src="../assets/green apples 22.png" alt="icone de coração">
                   </button>
                   <span>{{ comment.likes }} likes</span>
                   <span>{{ comment.answers }} respostas</span>
@@ -162,7 +162,7 @@
                     <p class="nameuser">Adriano da Silva</p>
                     <div>
                       <span class="role">Autor</span>
-                      <img src="../assets/verify.png" alt="">
+                      <img src="../assets/verify.png" alt="icone de verificado laranja">
                     </div>
                   </header>
                   <p class="comment">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
@@ -172,7 +172,7 @@
                     <p class="nameuser">Carlos Henrique Santos</p>
                     <div>
                       <span class="role">Coautor</span>
-                      <img src="../assets/verify.png" alt="">
+                      <img src="../assets/verify.png" alt="icone de verificado laranja">
                     </div>
                   </header>
                   <p class="comment">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
@@ -184,7 +184,7 @@
                     <p class="nameuser">Carmila Ferreira Andrade</p>
                     <div>
                       <span class="role">Coautor</span>
-                      <img src="../assets/verify.png" alt="">
+                      <img src="../assets/verify.png" alt="icone de verificado laranja">
                     </div>
                   </header>
                   <p class="comment">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
@@ -196,7 +196,7 @@
                     <p class="nameuser">Ana Carolina</p>
                     <div>
                       <span class="role">Coautor</span>
-                      <img src="../assets/verify.png" alt="">
+                      <img src="../assets/verify.png" alt="icone de verificado laranja">
                     </div>
                   </header>
                   <p class="comment">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
@@ -205,6 +205,7 @@
               <div *ngSwitchCase="0">
                 <div  class="answered-topic">
                   <div class="front-drop">
+                    <img src="../assets/gray-verify.png" alt="Verificado cor cinza">
                     <h3>Aguardando feedback dos autores</h3>
                   </div>
                   <h4 class="ops-topic-subject">{{ comment.title }}</h4>
@@ -212,10 +213,10 @@
                   <p class="comment">{{ comment.comment }}</p>
                   <div class="topic-actions-container">
                     <a href="#">
-                      <img src="../assets/mais informações.svg" alt="">
+                      <img src="../assets/mais informações.svg" alt="icone de três pontinhos">
                     </a>
                     <button class="action-button">
-                      <img src="../assets/green apples 22.png" alt="">
+                      <img src="../assets/green apples 22.png" alt="icone de coração">
                     </button>
                     <span>{{ comment.likes }} like</span>
                     <span>{{ comment.answers }} resposta</span>

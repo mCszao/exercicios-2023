@@ -664,6 +664,18 @@ svg#clouds {
     height: 100%;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3{
+      color: #707070;
+      font-family: Quicksand;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
   }
 
   .answered-topic{

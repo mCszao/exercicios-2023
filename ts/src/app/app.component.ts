@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Box } from './enum/Box.enum';
+import { ICommentSave } from './interface/IComment.interfaces';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,9 +9,12 @@ import { Box } from './enum/Box.enum';
 
 export class AppComponent {
   title = 'DevChuva';
-
+  commentObject = {
+    title: "",
+    comment: ""
+  } as ICommentSave;
   box = Box.CREATE;
-  commentsList = [{
+  commentsList : Array<ICommentSave> = [{
     title: "Título do tópico",
     username :"Carlos Henrique Santos",
     comment: "Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo..." ,
@@ -56,4 +60,25 @@ export class AppComponent {
     return "visible";
   }
 
+  addComment(): void{
+    let {title, comment} = this.commentObject;
+    if(title != "" || comment != "") {
+      this.commentsList.unshift({
+      title,
+      comment,
+      answers: 1,
+      likes: 0,
+      username: "You"
+    })
+    this.setLastVisible();;
+    this.cleanFields();
+    return;
+    }
+    alert("Não é possível criar tópicos vazios");
+  }
+
+  cleanFields(){
+    this.commentObject.title = "";
+    this.commentObject.comment = "";
+  }
 }

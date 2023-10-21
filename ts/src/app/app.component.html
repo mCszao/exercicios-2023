@@ -204,7 +204,9 @@
               </div>
               <div *ngSwitchCase="0">
                 <div  class="answered-topic">
-                  <div class="front-drop"></div>
+                  <div class="front-drop">
+                    <h3>Aguardando feedback dos autores</h3>
+                  </div>
                   <h4 class="ops-topic-subject">{{ comment.title }}</h4>
                   <p class="nameuser">{{ comment.username }}</p>
                   <p class="comment">{{ comment.comment }}</p>
@@ -224,7 +226,7 @@
         </section>
       </section>
 
-      <h3>Após submeter o formulário, a seguinte mensagem deve ser exibida: Aguardando feedback dos autores</h3>
+
     </div>
     <footer>
       <img src="../assets/footer.png" alt="">

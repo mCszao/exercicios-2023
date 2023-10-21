@@ -101,10 +101,11 @@
             <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
           </div>
           <form *ngSwitchCase="'form'"  >
-            Assunto:
-            <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+
+            <input [(ngModel)]="commentObject.title" name="title" class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+            <input [(ngModel)]="commentObject.comment" name="comment" class="content-text" >
             Conteúdo:
-            <a (click)="setLastVisible()">Enviar</a>
+            <a (click)="addComment()">Enviar</a>
           </form>
           <div *ngSwitchCase="'last'">
             <p>teste</p>

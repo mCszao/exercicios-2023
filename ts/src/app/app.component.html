@@ -82,8 +82,8 @@
           <h3>Resumo</h3>
         </div>
         <div class="resume-text-container">
-          <p></p>
-          <a href="#" class="btn-show-more">ver mais</a>
+          {{ resumeText }}
+          <a class="btn-show-more" (click)="setResumeString()">ver mais</a>
         </div>
       </section>
       <section class="topics-container container-with-border">
@@ -99,7 +99,7 @@
           </div>
           <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
         </div>
-        <button href="#" class="btn-create-topic">
+        <button  class="btn-create-topic">
           <img src="../assets/icon - criar.svg" alt=""><span>
             criar tópico
           </span>

@@ -109,7 +109,12 @@
             <a (click)="addComment()">Enviar</a>
           </form>
           <div *ngSwitchCase="'last'">
-            <p>teste</p>
+            <div class="last-information-container">
+              <h2>Seu tópico foi enviado com sucesso! :D</h2>
+              <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+
+              <a>Descubra outros trabalhos!</a>
+            </div>
           </div>
         </div>
         <button (click)="setFormVisible()" class="btn-create-topic" [ngClass]="verifyForm()">
@@ -138,6 +143,7 @@
           <ng-template #withComment>
             <div>
               <div  class="answered-topic">
+              <div class="front-drop"></div>
               <h4 class="ops-topic-subject">{{ comment.title }}</h4>
               <p class="nameuser">{{ comment.username }}</p>
               <p class="comment">{{ comment.comment }}</p>

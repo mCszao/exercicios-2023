@@ -123,87 +123,104 @@
           </span>
         </button>
         <section *ngFor="let comment of commentsList" class="topics-list">
-          <div *ngIf="comment.answers <= 1, else withComment">
-            <div  class="answered-topic">
-              <h4 class="ops-topic-subject">{{ comment.title }}</h4>
-              <p class="nameuser">{{ comment.username }}</p>
-              <p class="comment">{{ comment.comment }}</p>
-              <div class="topic-actions-container">
-                <a href="#">
-                  <img src="../assets/mais informações.svg" alt="">
-                </a>
-                <button class="action-button">
-                  <img src="../assets/green apples 22.png" alt="">
-                </button>
-                <span>{{ comment.likes }} like</span>
-                <span>{{ comment.answers }} resposta</span>
-              </div>
-            </div>
-          </div>
-          <ng-template #withComment>
-            <div>
+          <div  [ngSwitch]="comment.likes">
+            <div *ngSwitchCase="1">
               <div  class="answered-topic">
-              <div class="front-drop"></div>
-              <h4 class="ops-topic-subject">{{ comment.title }}</h4>
-              <p class="nameuser">{{ comment.username }}</p>
-              <p class="comment">{{ comment.comment }}</p>
-              <div class="topic-actions-container">
-                <a href="#">
-                  <img src="../assets/mais informações.svg" alt="">
-                </a>
-                <button class="action-button">
-                  <img src="../assets/green apples 22.png" alt="">
-                </button>
-                <span>{{ comment.likes }} likes</span>
-                <span>{{ comment.answers }} respostas</span>
+                <h4 class="ops-topic-subject">{{ comment.title }}</h4>
+                <p class="nameuser">{{ comment.username }}</p>
+                <p class="comment">{{ comment.comment }}</p>
+                <div class="topic-actions-container">
+                  <a href="#">
+                    <img src="../assets/mais informações.svg" alt="">
+                  </a>
+                  <button class="action-button">
+                    <img src="../assets/green apples 22.png" alt="">
+                  </button>
+                  <span>{{ comment.likes }} like</span>
+                  <span>{{ comment.answers }} resposta</span>
+                </div>
               </div>
             </div>
-              <div div class="comments-container has-role container-with-border">
-                <header class="header-comment">
-                  <p class="nameuser">Adriano da Silva</p>
-                  <div>
-                    <span class="role">Autor</span>
-                    <img src="../assets/verify.png" alt="">
-                  </div>
-                </header>
-                <p class="comment">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+            <div *ngSwitchCase="4">
+              <div  class="answered-topic">
+                <h4 class="ops-topic-subject">{{ comment.title }}</h4>
+                <p class="nameuser">{{ comment.username }}</p>
+                <p class="comment">{{ comment.comment }}</p>
+                <div class="topic-actions-container">
+                  <a href="#">
+                    <img src="../assets/mais informações.svg" alt="">
+                  </a>
+                  <button class="action-button">
+                    <img src="../assets/green apples 22.png" alt="">
+                  </button>
+                  <span>{{ comment.likes }} likes</span>
+                  <span>{{ comment.answers }} respostas</span>
+                </div>
               </div>
-              <div div class="comments-container container-with-border">
-                <header class="header-comment">
-                  <p class="nameuser">Carlos Henrique Santos</p>
-                  <div>
-                    <span class="role">Coautor</span>
-                    <img src="../assets/verify.png" alt="">
-                  </div>
-                </header>
-                <p class="comment">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+              <div div class="comments-container has-role container-with-border">
+                  <header class="header-comment">
+                    <p class="nameuser">Adriano da Silva</p>
+                    <div>
+                      <span class="role">Autor</span>
+                      <img src="../assets/verify.png" alt="">
+                    </div>
+                  </header>
+                  <p class="comment">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                </div>
+                <div div class="comments-container container-with-border">
+                  <header class="header-comment">
+                    <p class="nameuser">Carlos Henrique Santos</p>
+                    <div>
+                      <span class="role">Coautor</span>
+                      <img src="../assets/verify.png" alt="">
+                    </div>
+                  </header>
+                  <p class="comment">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
 
-                  Obrigada pela resposta, muito interessante o seu trabalho!</p>
-              </div>
-              <div div class="comments-container has-role container-with-border">
-                <header class="header-comment">
-                  <p class="nameuser">Carmila Ferreira Andrade</p>
-                  <div>
-                    <span class="role">Coautor</span>
-                    <img src="../assets/verify.png" alt="">
-                  </div>
-                </header>
-                <p class="comment">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                    Obrigada pela resposta, muito interessante o seu trabalho!</p>
+                </div>
+                <div div class="comments-container has-role container-with-border">
+                  <header class="header-comment">
+                    <p class="nameuser">Carmila Ferreira Andrade</p>
+                    <div>
+                      <span class="role">Coautor</span>
+                      <img src="../assets/verify.png" alt="">
+                    </div>
+                  </header>
+                  <p class="comment">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
 
-                  Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                    Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                </div>
+                <div div class="comments-container has-role container-with-border">
+                  <header class="header-comment">
+                    <p class="nameuser">Ana Carolina</p>
+                    <div>
+                      <span class="role">Coautor</span>
+                      <img src="../assets/verify.png" alt="">
+                    </div>
+                  </header>
+                  <p class="comment">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                </div>
               </div>
-              <div div class="comments-container has-role container-with-border">
-                <header class="header-comment">
-                  <p class="nameuser">Ana Carolina</p>
-                  <div>
-                    <span class="role">Coautor</span>
-                    <img src="../assets/verify.png" alt="">
+              <div *ngSwitchCase="0">
+                <div  class="answered-topic">
+                  <div class="front-drop"></div>
+                  <h4 class="ops-topic-subject">{{ comment.title }}</h4>
+                  <p class="nameuser">{{ comment.username }}</p>
+                  <p class="comment">{{ comment.comment }}</p>
+                  <div class="topic-actions-container">
+                    <a href="#">
+                      <img src="../assets/mais informações.svg" alt="">
+                    </a>
+                    <button class="action-button">
+                      <img src="../assets/green apples 22.png" alt="">
+                    </button>
+                    <span>{{ comment.likes }} like</span>
+                    <span>{{ comment.answers }} resposta</span>
                   </div>
-                </header>
-                <p class="comment">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                </div>
               </div>
             </div>
-          </ng-template>
         </section>
       </section>
 

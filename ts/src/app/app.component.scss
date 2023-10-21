@@ -513,6 +513,74 @@ svg#clouds {
   gap: 1rem;
   padding-bottom: 1rem;
 
+  .form-new-topic{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    p{
+      color: #5C5C5C;
+      text-align: center;
+      font-family: Quicksand;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    label{
+      align-self: flex-start;
+      color: #ED7839;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+    }
+
+    input, textarea{
+      align-self: flex-start;
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid #CCC;
+      background: #FFF;
+    }
+    .subject{
+      padding: 1rem
+    }
+    .comment-area{
+      padding: 1rem;
+      font-family: 'Quicksand', sans-serif;
+      height: 15vh;
+    }
+    a{
+      display: flex;
+      color: #FFF;
+      text-align: center;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px;
+      justify-content: center;
+      margin: 10px auto;
+      position: static;
+      background:  #FFB354 50%;
+      padding: .5rem;
+      border-radius: .5rem;
+      border: none;
+      width: 100%;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+  }
   .new-topic-container{
     display: flex;
     flex-direction: column;

@@ -90,42 +90,53 @@
         <div class="title-container">
           <h3>Discussões</h3>
         </div>
-        <div class="new-topic-container">
-          <h4>Compartilhe suas idéias ou dúvidas com os autores!</h4>
-          <div class="icons-topic-container">
-            <img src="../assets/icone1.svg" alt="">
-            <img src="../assets/icone2.svg" alt="">
-            <img src="../assets/icone3.svg" alt="">
+        <div [ngSwitch]="box.toString()">
+          <div *ngSwitchCase="'create'" class="new-topic-container">
+            <h4>Compartilhe suas idéias ou dúvidas com os autores!</h4>
+            <div class="icons-topic-container">
+              <img src="../assets/icone1.svg" alt="">
+              <img src="../assets/icone2.svg" alt="">
+              <img src="../assets/icone3.svg" alt="">
+            </div>
+            <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
           </div>
-          <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+          <form *ngSwitchCase="'form'"  >
+            Assunto:
+            <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+            Conteúdo:
+            <a (click)="setLastVisible()">Enviar</a>
+          </form>
+          <div *ngSwitchCase="'last'">
+            <p>teste</p>
+          </div>
         </div>
-        <button  class="btn-create-topic">
+        <button (click)="setFormVisible()" class="btn-create-topic" [ngClass]="verifyForm()">
           <img src="../assets/icon - criar.svg" alt=""><span>
             criar tópico
           </span>
         </button>
         <div>
           <div  class="answered-topic">
-          <h4 class="ops-topic-subject">Título do tópico</h4>
-          <p class="nameuser">Carlos Henrique Santos</p>
-          <p class="comment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-          <div class="topic-actions-container">
-            <a href="#">
-              <img src="../assets/mais informações.svg" alt="">
-            </a>
-            <button class="action-button">
-              <img src="../assets/green apples 22.png" alt="">
-            </button>
-            <span>1 like</span>
-            <span>1 resposta</span>
+            <h4 class="ops-topic-subject"></h4>
+            <p class="nameuser"></p>
+            <p class="comment"></p>
+            <div class="topic-actions-container">
+              <a href="#">
+                <img src="../assets/mais informações.svg" alt="">
+              </a>
+              <button class="action-button">
+                <img src="../assets/green apples 22.png" alt="">
+              </button>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
         </div>
         <div>
           <div  class="answered-topic">
-          <h4 class="ops-topic-subject">Título do tópico</h4>
-          <p class="nameuser">Carlos Henrique Santos</p>
-          <p class="comment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+          <h4 class="ops-topic-subject"></h4>
+          <p class="nameuser"></p>
+          <p class="comment"></p>
           <div class="topic-actions-container">
             <a href="#">
               <img src="../assets/mais informações.svg" alt="">
@@ -133,8 +144,8 @@
             <button class="action-button">
               <img src="../assets/green apples 22.png" alt="">
             </button>
-            <span>4 like</span>
-            <span>4 resposta</span>
+            <span></span>
+            <span></span>
           </div>
         </div>
           <div div class="comments-container has-role container-with-border">
@@ -182,14 +193,25 @@
             <p class="comment">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
           </div>
         </div>
+        <div>
+          <div  class="answered-topic">
+            <h4 class="ops-topic-subject"></h4>
+            <p class="nameuser"></p>
+            <p class="comment"></p>
+            <div class="topic-actions-container">
+              <a href="#">
+                <img src="../assets/mais informações.svg" alt="">
+              </a>
+              <button class="action-button">
+                <img src="../assets/green apples 22.png" alt="">
+              </button>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
       </section>
-      <form>
-        Assunto:
-        <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
-        Conteúdo:
-        <!-- <input> -->
-        <button>Enviar</button>
-      </form>
+
       <h3>Após submeter o formulário, a seguinte mensagem deve ser exibida: Aguardando feedback dos autores</h3>
     </div>
     <footer>

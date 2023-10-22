@@ -106,7 +106,7 @@
             <input [(ngModel)]="commentObject.title" name="title" class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
             <label for="comment">Conteúdo</label>
             <textarea [(ngModel)]="commentObject.comment" name="comment" class="comment-area" ></textarea>
-            <a (click)="addComment()">Enviar</a>
+            <button (click)="addComment()">Enviar</button>
           </form>
           <div *ngSwitchCase="'last'">
             <div class="last-information-container">
@@ -133,9 +133,9 @@
                   <a href="#">
                     <img src="../assets/mais informações.svg" alt="icone de três pontinhos">
                   </a>
-                  <button class="action-button">
+                  <a class="action-button">
                     <img src="../assets/green apples 22.png" alt="icone de coração">
-                  </button>
+                  </a>
                   <span>{{ comment.likes }} like</span>
                   <span>{{ comment.answers }} resposta</span>
                 </div>

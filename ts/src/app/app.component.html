@@ -125,7 +125,7 @@
         <section *ngFor="let comment of commentsList" class="topics-list">
           <div  [ngSwitch]="comment.likes">
             <div *ngSwitchCase="1">
-              <div  class="answered-topic">
+              <div  class="topic">
                 <h4 class="ops-topic-subject">{{ comment.title }}</h4>
                 <p class="nameuser">{{ comment.username }}</p>
                 <p class="comment">{{ comment.comment }}</p>
@@ -203,7 +203,7 @@
                 </div>
               </div>
               <div *ngSwitchCase="0">
-                <div  class="answered-topic">
+                <div  class="topic">
                   <div class="front-drop">
                     <img src="../assets/gray-verify.png" alt="Verificado cor cinza">
                     <h3>Aguardando feedback dos autores</h3>

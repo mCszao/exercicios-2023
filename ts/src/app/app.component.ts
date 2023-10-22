@@ -62,8 +62,7 @@ export class AppComponent {
 
   addComment(): void{
     let {title, comment} = this.commentObject;
-    if(title != "" || comment != "") {
-      this.commentsList.unshift({
+    this.commentsList.unshift({
       title,
       comment,
       answers: 1,
@@ -72,9 +71,11 @@ export class AppComponent {
     })
     this.setLastVisible();;
     this.cleanFields();
-    return;
-    }
-    alert("Não é possível criar tópicos vazios");
+    // if(title != "" || comment != "") {
+
+    // return;
+    // }
+    // alert("Não é possível criar tópicos vazios");
   }
 
   cleanFields(){

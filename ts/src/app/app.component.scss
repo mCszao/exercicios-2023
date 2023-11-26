@@ -665,6 +665,10 @@ footer{
 .visible {
   display: flex;
 }
+.visible-comment {
+  display: flex;
+  flex-direction: column;
+}
 
 .occult {
   display: none;

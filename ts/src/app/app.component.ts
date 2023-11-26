@@ -43,9 +43,6 @@ export class AppComponent {
 
   setFormVisible(): void{
     this.box = Box.FORM;
-    let anchor = document.querySelector('.btn-create-topic') as HTMLElement;
-    let span = anchor.querySelector('span')  as HTMLElement;
-    span.innerHTML = "criar novo tópico";
   }
 
   setLastVisible(): void{

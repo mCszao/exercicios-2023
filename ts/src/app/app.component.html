@@ -81,7 +81,7 @@
         <div class="title-container ">
           <h3>Resumo</h3>
         </div>
-        <div class="resume-text-container">
+        <div class="resume-text-container" *ngIf="resumeText.length <= 524, else seeLess ">
           {{ resumeText }}
           <a class="btn-show-more" (click)="setResumeString()">ver mais</a>
         </div>
@@ -235,6 +235,13 @@
   </main>
 
 </div>
+
+<ng-template #seeLess>
+  <div class="resume-text-container">
+    {{ resumeText }}
+    <a class="btn-see-less" (click)="setResumeString()">ver menos</a>
+  </div>
+</ng-template>
 
 
 

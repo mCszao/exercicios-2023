@@ -34,14 +34,11 @@ export class AppComponent {
   resumeText = this.mockResumeText.substring(0, 524);
 
   setResumeString(): void {
-    let anchor = document.querySelector('.btn-show-more') as HTMLElement;
     if(this.resumeText.length > 524) {
       this.resumeText = this.mockResumeText.substring(0, 524);
-      anchor.innerText = "ver mais"
       return;
     }
     this.resumeText = this.mockResumeText;
-    anchor.innerText = "ver menos";
   }
 
   setFormVisible(): void{
@@ -69,13 +66,8 @@ export class AppComponent {
       likes: 0,
       username: "You"
     })
-    this.setLastVisible();;
+    this.setLastVisible();
     this.cleanFields();
-    // if(title != "" || comment != "") {
-
-    // return;
-    // }
-    // alert("Não é possível criar tópicos vazios");
   }
 
   cleanFields(){

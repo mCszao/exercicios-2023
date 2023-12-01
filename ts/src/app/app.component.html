@@ -100,12 +100,15 @@
             </div>
             <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
           </div>
-          <form *ngSwitchCase="'form'" class="form-new-topic" >
+          <form [formGroup]="myForm" *ngSwitchCase="'form'" class="form-new-topic" >
             <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
             <label for="title">Assunto</label>
-            <input [(ngModel)]="commentObject.title" name="title" class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+            <input formControlName="title" class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
             <label for="comment">Conteúdo</label>
-            <textarea [(ngModel)]="commentObject.comment" name="comment" class="comment-area" ></textarea>
+            <textarea formControlName="comment" class="comment-area" ></textarea>
+            <span class="error-message" *ngIf="myForm.get('title')?.errors || myForm.get('comment')?.errors">
+              Atenção! Campos Assunto e Conteúdo não podem ser vazios.
+            </span>
             <button (click)="addComment()">Enviar</button>
           </form>
           <div *ngSwitchCase="'last'">

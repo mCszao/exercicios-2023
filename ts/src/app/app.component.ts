@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Box } from './enum/Box.enum';
 import { ICommentSave } from './interface/IComment.interfaces';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,11 +10,20 @@ import { ICommentSave } from './interface/IComment.interfaces';
 
 export class AppComponent {
   title = 'DevChuva';
-  commentObject = {
-    title: "",
-    comment: ""
-  } as ICommentSave;
+
+  constructor(private formBuilder: FormBuilder){}
+
+  ngOnInit(): void{
+    this.myForm = this.formBuilder.group({
+      title: ['', [Validators.required]],
+      comment: ['', [Validators.required]]
+    });
+  }
+
+  myForm!: FormGroup;
+
   box = Box.CREATE;
+
   commentsList : Array<ICommentSave> = [{
     title: "Título do tópico",
     username :"Carlos Henrique Santos",
@@ -55,22 +65,20 @@ export class AppComponent {
   }
 
   addComment(): void{
-    let {title, comment} = this.commentObject;
-    this.commentsList.unshift({
-      title,
-      comment,
-      answers: 1,
-      likes: 0,
-      username: "You"
-    })
-    this.setLastVisible();
-    this.cleanFields();
+    if(this.myForm.valid){
+      let {title, comment} = this.myForm.value;
+      this.commentsList.unshift({
+        title,
+        comment,
+        answers: 0,
+        likes: 0,
+        username: "You"
+      })
+      this.setLastVisible();
+      this.myForm.reset();
+    }
   }
 
-  cleanFields(){
-    this.commentObject.title = "";
-    this.commentObject.comment = "";
-  }
 
   openCloseComments(): void{
     if(this.dropDownIs == 'occult') {

@@ -38,7 +38,23 @@ class Paper {
   /**
    * Builder.
    */
-  public function __construct($id, $title, $type, $authors = []) {
+  public function __construct($id, $title, $type) {
+    $this->id = $id;
+    $this->title = $title;
+    $this->type = $type;
   }
+
+  public function addAuthor($author){
+    array_push($this->authors, $author);
+  }
+
+  public function getArrayValues(){
+    $arrayValues = [$this->id, $this->title, $this->type];
+    foreach($this->authors as $author){
+        array_push($row, $author->getName());
+        array_push($row, $author->getInstitute());
+    }
+    return $arrayValues;
+}
 
 }
